@@ -1,0 +1,216 @@
+/* --- Общие стили для элементов --- */
+
+@font-face {
+    font-family: Exo_2, sans-serif;
+    src: url(fonts/Exo_2);
+}
+
+@font-face {
+    font-family: Lato, sans-serif;
+    src: url(fonts/Lato);
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+    background: transparent;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    scrollbar-width: none;
+    color: rgb(30, 30, 30);
+    -ms-overflow-style: none;
+    font-family: Lato, sans-serif;
+    font-size: calc(4px + 16 * (100vw / 1920));
+}
+
+a{
+    user-select: none;
+    text-decoration: none;
+}
+
+label{
+    width: 24%;
+    display: flex;
+    margin-bottom: 2%;
+    flex-direction: column;
+}
+
+input{
+    margin-top: 2%;
+    padding: 3% 3%;
+    border-radius: 8px;
+    border: solid 1px black;
+    background-color: transparent;
+    font-size: calc(4px + 12 * (100vw / 1920));
+}
+
+input:focus{
+    outline: none;
+}
+
+button{
+    border: none;
+    padding: 1% 4%;
+    cursor: pointer;
+    margin-bottom: 2%;
+    border-radius: 8px;
+    transition: .1s ease;
+    background-color: white;
+}
+
+button:hover{
+    background-color: rgb(255, 189, 159);
+}
+
+.link{
+    z-index: 10;
+    transition: .2s ease;
+}
+
+.no-grow{
+    flex-grow: 1;
+}
+
+/* --- Общие стили для блоков --- */
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(240, 240, 240);
+}
+
+.container{
+    width: 60%;
+    flex-grow: 0;
+    margin: 0 auto;
+}
+
+.full-block{
+    background-color: white;
+}
+
+.body-card{
+    padding: 2%;
+    display: flex;
+    margin-top: 3%;
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+
+/* --- Шапка --- */
+
+header{
+    display: flex;
+    padding: 2% 0;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo-img{
+    width: 26%;
+}
+
+.left-section{
+    width: 40%;
+}
+
+.right-section{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.link-place{
+    width: 50%;
+    display: flex;
+    margin-left: 10%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-link{
+    left: 0;
+    right: 0;
+    z-index: 0;
+    width: 100%;
+    padding: 12% 0;
+    margin: 0 auto;
+    border-radius: 8px;
+    position: absolute;
+    transition: .3s ease;
+    background-color: rgb(255, 189, 159);
+}
+
+.link-place:hover .background-link{
+    filter: blur(8px);
+    transform: translateY(12%);
+    background-color: rgb(255, 104, 34);
+}
+
+.link-place:hover .link{
+    color: white;
+}
+
+/* --- Подвал --- */
+
+footer{
+    display: flex;
+    padding: 2% 0;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* --- Страница входа --- */
+
+.subtitle{
+    margin: 6% 0;
+    font-size: calc(12px + 20 * (100vw / 1920));
+}
+
+.form-place{
+    margin: 4% 0;
+    display: flex;
+    border-radius: 20px;
+    padding: 0 4% 0% 4%;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0px 10px 20px 1px rgb(218, 218, 218);
+    background-color: rgb(255, 238, 230);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Страница регистрации --- */
+
+.checkbox-label{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: calc(4px + 12 * (100vw / 1920));
+}
+
+.checkbox-label input{
+    margin: 0 2% 0 0;
+}
+
+/* --- Главная страница --- */
+
+
+
+/* --- Страница заказа --- */
+
+
+
+/* --- --- */
